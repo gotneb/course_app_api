@@ -30,3 +30,42 @@ def get_courses() -> List[Course]:
         courses.append(course)
     
     return courses
+
+
+def get_instructor_by_id(id: int) -> Instructor:
+    instructors = get_instructors()
+
+    for i in instructors:
+        if i.id == id:
+            return i
+    return None
+
+
+def get_course_by_id(id: int) -> Course:
+    courses = get_courses()
+
+    for c in courses:
+        if c.id == id:
+            return c
+    return None
+
+
+def get_all_tags() -> List[str]:
+    return ["coding", "language", "design", "science", "marketing", "business"]
+
+
+def search_courses(search_query: str) -> List[Course]:
+    courses = get_courses()
+    return [
+        course for course in courses
+        if search_query.lower() in course.title.lower() or any(search_query.lower() in tag.lower() for tag in course.tags)
+    ]
+
+
+def search_courses_by_tag(tag: str) -> List[Course]:
+    courses = get_courses()
+
+    return [
+        course for course in courses
+        if any(tag.lower() == t.lower() for t in course.tags)
+    ]
