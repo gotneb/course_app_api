@@ -7,7 +7,7 @@
         "rating": 4.5,
         "price": 49.99,
         "enrolled": 823,
-        "tags": ["programming", "python"],
+        "tags": ["coding", "python"],
         "description": "Unlock the full potential of Python with this comprehensive and engaging course. Whether you're a complete beginner or looking to refine your skills, this course covers everything you need to know, from basic syntax and data types to advanced concepts like object-oriented programming and web development frameworks. By the end of this course, you'll have the confidence and expertise to build real-world applications, automate tasks, and even dive into data analysis or machine learning. Start your Python journey today!",
         "lessons": [
             {
@@ -38,7 +38,7 @@
         "rating": 4.7,
         "price": 59.99,
         "enrolled": 671,
-        "tags": ["programming", "java"],
+        "tags": ["coding", "java"],
         "description": "Transform your programming skills and master Java with this hands-on course designed for developers of all levels. Learn the core concepts of Java programming, including object-oriented design, robust application development, and integration with powerful frameworks. This course goes beyond theory, providing practical exercises and projects that mimic real-world scenarios, ensuring you're prepared to tackle any challenge. Whether you aim to create Android apps, enterprise systems, or scalable web services, this course will give you the tools and confidence to succeed.",
         "lessons": [
             {
@@ -69,7 +69,7 @@
         "rating": 4.3,
         "price": 39.99,
         "enrolled": 452,
-        "tags": ["programming", "go"],
+        "tags": ["coding", "go"],
         "description": "Step into the future of programming with Go, the language designed for modern developers. This course will guide you through the fundamentals of Go, from its elegant syntax to its powerful concurrency features. Ideal for building scalable, efficient applications, this course provides deep insights into Go's capabilities in web development, cloud computing, and server-side programming. With real-world projects and clear, concise explanations, you’ll gain the skills needed to stand out in the tech industry. Join now and see why Go is the go-to language for top tech companies.",
         "lessons": [
             {
@@ -93,14 +93,14 @@
         ]
     },
     {
-        "id": 15,
-        "instructor_id": 15,
+        "id": 4,
+        "instructor_id": 4,
         "thumbnail_url": "",
         "title": "Rust Made Simple: Safe and Fast Systems Development",
         "rating": 4.8,
         "price": 69.99,
         "enrolled": 998,
-        "tags": ["programming", "rust"],
+        "tags": ["coding", "rust"],
         "description": "Embark on an exciting journey into Rust, the programming language redefining systems-level development. This course is tailored for developers who want to write safe, high-performance code without sacrificing productivity. You'll learn Rust's unique ownership model, memory safety, and advanced features like asynchronous programming. From building command-line tools to crafting robust web applications, you'll gain hands-on experience through practical projects. Rust is the future, and this course will make sure you're ready to embrace it. Enroll now and become a Rustacean!",
         "lessons": [
             {
@@ -131,7 +131,7 @@
         "rating": 4.6,
         "price": 54.99,
         "enrolled": 734,
-        "tags": ["programming", "c"],
+        "tags": ["coding", "c"],
         "description": "Lay a solid foundation for your programming career with this in-depth C course. Known as the 'mother of all programming languages,' C is essential for understanding how computers work at their core. This course covers everything from the basics of C syntax and memory management to advanced topics like pointers and dynamic data structures. Whether you're aspiring to build operating systems, embedded systems, or performance-critical applications, this course will equip you with the knowledge and skills to excel. Join thousands of successful students and start your C journey today!",
         "lessons": [
             {
