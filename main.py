@@ -12,7 +12,7 @@ async def root():
     return {"message": "Hello World"}
 
 
-@app.get("/instructor/{id}")
+@app.get("/instructors/{id}")
 async def get_instructor(id: int):
     instructor = get_instructor_by_id(id)
     if instructor == None:
@@ -20,7 +20,7 @@ async def get_instructor(id: int):
     return instructor
 
 
-@app.get("/course/{id}")
+@app.get("/courses/{id}")
 async def get_course(id: int):
     course = get_course_by_id(id)
     if course == None:
@@ -38,7 +38,7 @@ async def get_tags():
     }
 
 
-@app.get("/search/title/{query}")
+@app.get("/search/courses/{query}")
 async def search_course(query: str):
     found_courses = search_courses(query)
     return {
@@ -48,7 +48,7 @@ async def search_course(query: str):
     }
 
 
-@app.get("/search/tag/{query}")
+@app.get("/search/tags/{query}")
 async def search_course(query: str):
     found_courses = search_courses_by_tag(query)
     return {
