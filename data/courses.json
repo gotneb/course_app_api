@@ -2,6 +2,7 @@
     {
         "id": 1,
         "instructor_id": 1,
+        "instructor": "",
         "thumbnail_url": "",
         "title": "Master Python: From Zero to Advanced Programming",
         "rating": 4.5,
@@ -33,6 +34,7 @@
     {
         "id": 2,
         "instructor_id": 2,
+        "instructor": "",
         "thumbnail_url": "",
         "title": "Java Programming Mastery: Build Scalable Applications",
         "rating": 4.7,
@@ -64,6 +66,7 @@
     {
         "id": 3,
         "instructor_id": 3,
+        "instructor": "",
         "thumbnail_url": "",
         "title": "Effortless Go Programming: Build Modern Applications",
         "rating": 4.3,
@@ -95,6 +98,7 @@
     {
         "id": 4,
         "instructor_id": 4,
+        "instructor": "",
         "thumbnail_url": "",
         "title": "Rust Made Simple: Safe and Fast Systems Development",
         "rating": 4.8,
@@ -126,6 +130,7 @@
     {
         "id": 5,
         "instructor_id": 5,
+        "instructor": "",
         "thumbnail_url": "",
         "title": "The Ultimate C Programming Course: Learn the Core Concepts",
         "rating": 4.6,

@@ -15,6 +15,16 @@ def get_instructors() -> List[Instructor]:
     return instructors
 
 
+def get_courses_with_instructors() -> List[Course]:
+    courses = get_courses()
+
+    for course in courses:
+        if hasattr(course, "instructor_id"):
+            course.instructor = get_instructor_by_id(course.instructor_id)
+
+    return courses
+
+
 def get_courses() -> List[Course]:
     with open("data/courses.json", "r") as file:
         data = json.load(file)
@@ -27,6 +37,9 @@ def get_courses() -> List[Course]:
             lessons=lessons,
             **{key: value for key, value in course_data.items() if key != "lessons"}
         )
+
+        course.instructor = get_instructor_by_id(course.instructor_id)
+
         courses.append(course)
     
     return courses
@@ -46,6 +59,7 @@ def get_course_by_id(id: int) -> Course:
 
     for c in courses:
         if c.id == id:
+            c.instructor = get_instructor_by_id(c.instructor_id)
             return c
     return None
 
