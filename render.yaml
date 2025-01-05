@@ -7,7 +7,7 @@ services:
   - type: web
     runtime: python
     name: course-app-api
-    repo: https://github.com/gotneb/Real-ESRGAN-api
+    repo: https://github.com/gotneb/course_app_api
     plan: free
     branch: main
     buildCommand: pip install --upgrade pip && pip install -r requirements.txt
