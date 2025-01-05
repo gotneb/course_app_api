@@ -1,0 +1,14 @@
+reviews:
+  generation: off
+
+
+services:
+  # A web service on the Python native runtime
+  - type: web
+    runtime: python
+    name: course-app-api
+    repo: https://github.com/gotneb/Real-ESRGAN-api
+    plan: free
+    branch: main
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: fastapi run
