@@ -58,11 +58,16 @@ def get_instructor_by_id(id: int) -> Instructor:
 def get_popular_courses(n: int) -> List[Course]:
     courses = get_courses()
     n = min(n, len(courses))
-    
+
     return random.sample(courses, n)
 
 
 def get_course_by_tag(tag: str) -> List[Course]:
+    n = min(5, len(courses))
+
+    if tag.lower() == "all":
+        return random.sample(courses, n)
+
     courses = get_courses()
     courses_with_tags = []
 
