@@ -2,6 +2,7 @@ from .instructor import Instructor
 from .lesson import Lesson
 from .course import Course
 from typing import List
+import random
 
 import json
 
@@ -52,6 +53,24 @@ def get_instructor_by_id(id: int) -> Instructor:
         if i.id == id:
             return i
     return None
+
+
+def get_popular_courses(n: int) -> List[Course]:
+    courses = get_courses()
+    n = min(n, len(courses))
+    
+    return random.sample(courses, n)
+
+
+def get_course_by_tag(tag: str) -> List[Course]:
+    courses = get_courses()
+    courses_with_tags = []
+
+    for c in courses:
+        if tag in c.tags:
+            courses_with_tags.append(c)
+    
+    return courses_with_tags
 
 
 def get_course_by_id(id: int) -> Course:

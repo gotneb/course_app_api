@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from model.mapper import get_instructors, get_courses, get_instructor_by_id, get_course_by_id, get_all_tags, search_courses, search_courses_by_tag
+from model.mapper import *
 
 instructors = get_instructors()
 courses = get_courses()
@@ -35,6 +35,25 @@ async def get_tags():
         "total": len(tags),
         "error": None,
         "data": tags,
+    }
+
+@app.get("/tags/{category}")
+async def get_course_by_category(category: str):
+    courses = get_course_by_tag(category)
+    return {
+        "total": len(courses),
+        "error": None,
+        "data": courses,
+    }
+
+
+@app.get("/search/popular")
+async def search_popular_courses():
+    courses = get_popular_courses(10)
+    return {
+        "total": len(courses),
+        "error": None,
+        "data": courses,
     }
 
 
