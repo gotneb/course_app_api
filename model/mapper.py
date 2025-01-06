@@ -102,6 +102,11 @@ def search_courses(search_query: str) -> List[Course]:
 
 def search_courses_by_tag(tag: str) -> List[Course]:
     courses = get_courses()
+    n = min(5, len(courses))
+
+    if tag.lower() == "all":
+        return random.sample(courses, n)
+    
 
     return [
         course for course in courses
