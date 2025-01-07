@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Query
 from model.mapper import *
 
 instructors = get_instructors()
@@ -20,12 +20,19 @@ async def get_instructor(id: int):
     return instructor
 
 
-@app.get("/courses/{id}")
-async def get_course(id: int):
-    course = get_course_by_id(id)
-    if course == None:
-        raise HTTPException(status_code=404, detail="Course not found")
-    return course
+@app.get("/courses")
+async def get_course(ids: List[int] = Query(...)):
+    all_courses = get_courses()
+    
+    courses = []
+    for id in ids:
+        courses.append(get_course_by_id(id))
+
+    return {
+        "total": len(courses),
+        "error": None,
+        "data": courses,
+    }
 
 
 @app.get("/tag")
