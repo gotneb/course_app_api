@@ -446,5 +446,55 @@
                 "duration": 780
             }
         ]
+    },
+    {
+        "id": 12,
+        "instructor_id": 12,
+        "instructor": "",
+        "thumbnail_url": "https://www.classcentral.com/report/wp-content/uploads/2022/06/JavaScript-BCG-Banner-icons.png",
+        "title": "The Complete JavaScript Course 2025: From Zero to Expert!",
+        "rating": 4.7,
+        "price": 319.99,
+        "enrolled": 964125,
+        "tags": ["coding", "javascript"],
+        "description": "Learn Japanese FAST with this non-stop Japanese speaking course for BEGINNERS: learning Japanese will be easy and fun!",
+        "lessons": [
+            {
+                "id": 1,
+                "title": "Fundamentals - Part 1",
+                "video_url": "https://youtu.be/Ah__4g01y_M?si=PbVbDvK1_jPjSRJW",
+                "duration": 1500
+            },
+            {
+                "id": 2,
+                "title": "Fundamentals - Part 2",
+                "video_url": "https://youtu.be/Ah__4g01y_M?si=PbVbDvK1_jPjSRJW",
+                "duration": 1200
+            },
+            {
+                "id": 3,
+                "title": "Javascript in the browser",
+                "video_url": "https://youtu.be/Ah__4g01y_M?si=PbVbDvK1_jPjSRJW",
+                "duration": 982
+            },
+            {
+                "id": 4,
+                "title": "Data structures - Part 1",
+                "video_url": "https://youtu.be/Ah__4g01y_M?si=PbVbDvK1_jPjSRJW",
+                "duration": 780
+            },
+            {
+                "id": 5,
+                "title": "Data structures - Part 2",
+                "video_url": "https://youtu.be/Ah__4g01y_M?si=PbVbDvK1_jPjSRJW",
+                "duration": 650
+            },
+            {
+                "id": 6,
+                "title": "Functions",
+                "video_url": "https://youtu.be/Ah__4g01y_M?si=PbVbDvK1_jPjSRJW",
+                "duration": 348
+            }
+        ]
     }
 ]
