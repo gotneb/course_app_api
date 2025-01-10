@@ -337,7 +337,7 @@
     },
     {
         "id": 10,
-        "instructor_id": 10,
+        "instructor_id": 16,
         "instructor": "",
         "thumbnail_url": "https://img-c.udemycdn.com/course/240x135/999900_73eb_6.jpg",
         "title": "日本語 - Online Japanese N2 Course",
@@ -457,7 +457,7 @@
         "price": 319.99,
         "enrolled": 964125,
         "tags": ["coding", "javascript"],
-        "description": "Learn Japanese FAST with this non-stop Japanese speaking course for BEGINNERS: learning Japanese will be easy and fun!",
+        "description": "The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory. Many courses in one!",
         "lessons": [
             {
                 "id": 1,
